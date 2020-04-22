@@ -1,11 +1,12 @@
+/** @jsx jsx */
+import { jsx } from "theme-ui"
+
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header
-    style={{
-      background: `rebeccapurple`,
+    sx={{
       marginBottom: `1.45rem`,
     }}
   >
@@ -19,8 +20,8 @@ const Header = ({ siteTitle }) => (
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
-          style={{
-            color: `white`,
+          sx={{
+            color: 'accent',
             textDecoration: `none`,
           }}
         >
